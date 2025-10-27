@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para la cabecera */
+
+.container {
+    margin: 0px auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 50px;
+}
+
+.menu {
+    padding-top: 20px;
+    background-color: #E3DFFF
+}
+
+.link {
+    text-decoration: none;
+    color: #2F2504;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+.nombre {
+    display: flex;
+    float:left;
+    padding-top: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.nombre a {
+    color: #2F2504;
+    text-decoration: none;
+}
+
+
+.lista-links {
+    list-style: none;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 0px;
+}
+
+/*Estilos Showcase*/
+.showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - var(--header-h));
+    padding: 24px 16px;
+    background-image: url('../Imagenes/lindas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 87vh;
+    text-align: center; 
+}
+.logocontainer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E3DFFF;
+    opacity: 0.8;
+    width: min(90vw, 520px);  
+}
+.logo {
+    width: 250px;
+    transform: translateY(1px);   
+    opacity: 100;
+    margin-top: 0px;
+}
+.display1 {
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #2F2504;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+.display1 .thinner {
+    font-weight: 200;
+    font-size: 25px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .logocontainer { padding: 16px 20px; gap: 4px; }
+  .logo { width: 160px; }
+  .display1 { font-size: 18px; }
+}
+
+
+/* Estilos sección principal */
+
+.principal-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;  
+    flex-direction: row;
+}
+
+.img-princip {
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+ 
+.pregunta-tecnica {
+    text-align: center;
+    Font-family: 'Montserrat', sans-serif;
+    margin-top: auto;
+    
+}
+.tit-tecnica {
+    Font-size: 20px;
+    color:#420039;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px;
+    margin-top: 20%;
+}
+.linea-tit {
+    color: #420039;
+    font-weight: 700;
+}
+.txt-tecnica {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: clamp (16px 8vw 24px);
+    text-align: center;
+    margin-top: 10px;
+}
+.tit-horario {
+    Font-size: 20px;
+    color:#420039;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px;
+    margin-top: 20%;
+}
+.txt-horarios {
+    flex-wrap: wrap;
+    font-size: clamp (16px 8vw 24px);
+    text-align: center;
+    margin-top: 10px;
+}
+.hora-atencion {
+    text-align: center;
+    margin-top: 50px;
+    text-align: center;
+    Font-family: 'Montserrat', sans-serif;
+    display: flexbox;
+}
+.img-silvi {
+    text-align: center;
+}
+.item-silvi {
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center;
+    height: 100%;  
+    display: flexbox;
+}
+.btn-turno, .btn-silvi {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: #E3DFFF;
+    color: #420039;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn-turno:hover, .btn-silvi:hover {
+    background-color: #5B507A;
+    color: #E3DFFF;
+}
+@media only screen and (max-widht: 720px) {
+.principal-container {
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+/* Estilos clientas */
+.Clientas {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;    
+}    
+.txt-blog {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px; 
+   text-align: center;
+   margin-bottom: 20px;
+}
+.tit-cli {
+    text-align: center;
+    font-size: clamp(14px, 8vw, 20px);
+    font-weight: 400;
+    color: #420039;
+}
+.client-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: scroll;
+}
+.client-tit {
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-weight: 600;
+    color: #420039;
+}
+.client-item {
+    border-radius: 20px;
+    padding: 8px;
+}
+.img-card {
+    width: 180px;
+    border-radius: 100%;
+}
+.Reseña {
+    width: 180px;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #2F2504;
+}
+.tip-servicio {
+    margin-bottom: 8px;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    color: #2F2504;
+}
+.thinner3 {
+font-weight: lighter;
+}
+.botonera {
+   text-align: center;
+}
+.btn-client {
+    background-color: #E3DFFF;
+    color: #420039;
+    font-size: 14px;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+}
+.btn-client:hover {
+    background-color: #5B507A;
+    color:#E3DFFF;
+    font-size: 14px;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px; 
+    cursor: pointer;
+}
+
+/*Estilo Precios*/
+.precios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;  
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(rgba(235, 225, 225, 0.4), rgba(233, 227, 227, 0.4)), url(../Imagenes/planta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}    
+.precio-tit {
+    font-size: clamp(14px, 8vw, 20px);
+    color:#420039;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px;
+}
+.txt-precio {
+    font-size: 15px;
+    color: #2F2504;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+.servicio-tit {
+    margin-top: 60px;
+}
+.txt-servicio {
+    font-size: 15px;
+    color:#2F2504;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+.negrita {
+    font-size: 18px;
+    font-weight: 500;
+    color: #420039;
+    padding: 8px;
+}
+.thinner {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*Clases para Contacto*/
+.tit-contact {
+    font-size: clamp(14px, 8vw, 20px);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #420039;
+    font-weight: 400;
+}
+.txt-contact {
+    font-size: clamp (16px 8vw 24px);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.form-container {
+    text-align: center;
+    margin: 32px;
+}
+.formulario {
+    background-color: #EDE6F2;
+    font-size: 16px;
+    border: 2px solid #420039;
+    border-radius: 8px;
+    width: 300px;
+    margin: auto;
+}
+input[type=text],[type=email],[type=tel],textarea {
+    color:#5B507A;
+    border: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+input[type=text]{
+    margin: 32px;
+    border-bottom: 1px solid #420039;
+}
+input[type=email]{
+    margin: 32px;
+    border-bottom: 1px solid #420039;
+}
+input[type=tel]{
+    margin: 32px;
+    border-bottom: 1px solid #420039;
+}
+.mensaje {
+    margin-bottom: 32px;
+    border: 1px solid #420039;
+    padding: 2px;
+    width: 260px;
+}
+.btn-enviar {
+    background-color: #420039;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.btn-enviar:hover {
+    background-color: #5B507A;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px; 
+    cursor: pointer;  
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+/*Estilos para footer*/
+.img-footer {
+    text-align: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.img-footer1 {
+    width: 100%;
+    height: 50%;
+}
+.footer {
+    background-color: #E3DFFF;
+    color: #2F2504;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.redes {
+    width: 25%;
+    margin-top: 5%;
+}
+.info {
+    width: 25%;
+    margin-top: 5%;
+}
+.mailito {
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.mapa {
+    width: 50%;
+}
+.msj-inst {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.thinner2 {
+    font-weight: 200;
+}
+@media only screen and (max-widht: 720px) {
+.footer {
+    flex-direction: column;
+    align-items: center;
+}
+}
